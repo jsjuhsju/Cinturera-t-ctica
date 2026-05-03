@@ -1,12 +1,14 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'Tactical Belt - Script de Cinturera'
-author 'Tu Nombre'
-version '1.0.0'
+description 'Sistema Táctico Integrado - Cinto y Chaleco'
+author 'JSJUHSJU & Gemini'
+version '2.0.0'
 
--- Le decimos que use las funciones de ESX
-shared_script '@es_extended/imports.lua'
+shared_scripts {
+    '@es_extended/imports.lua',
+    'config.lua' -- IMPORTANTE: El config siempre va primero
+}
 
 client_scripts {
     'client.lua'
@@ -15,3 +17,5 @@ client_scripts {
 server_scripts {
     'server.lua'
 }
+
+
